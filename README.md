@@ -284,6 +284,7 @@ plot_clusters(HSMM_filtered[ordering_genes,], clusters)
 
 ![](img/c30.png)
 
+```
 ###################################################
 ### code chunk number 31: citation
 ###################################################
