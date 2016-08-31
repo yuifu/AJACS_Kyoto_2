@@ -10,7 +10,7 @@
 
 ----
 
-## 環境
+## 必要な環境
 
 [Jupyter Notebook](http://jupyter.org/) がサポートするブラウザが必要となります。
 ※Jupyter Notebookのインストールの必要はありません。
@@ -25,4 +25,5 @@
 - Safari　 https://support.apple.com/downloads/safari
 - Firefox　https://www.mozilla.org/en-US/firefox/new/
 
-
+## jupyterhubのURL
+当日までにこちらでアナウンスする予定です。
