@@ -27,16 +27,87 @@ __Google Chrome (>= 13) のインストールをお願いします__
 - ~~Safari　 https://support.apple.com/downloads/safari~~
 - ~~Firefox　https://www.mozilla.org/en-US/firefox/new/~~
 
-## jupyterhubのURL
+## jupyterhubのURL (TBA)
 当日までにこちらでアナウンスする予定です。
 
-- Chrome の方は "ADVANCED" をクリックし、"Proceed to <URL> (unsafe)" をクリックしてアクセスしてください
+Chrome の方は "ADVANCED" をクリックし、"Proceed to <URL> (unsafe)" をクリックしてアクセスしてください
 
 
-## Monocle による一細胞RNA-Seqデータの擬時間推定
+- 01 - 10 の方: 
+- 11 - 20 の方: 
+- 21 - 30 の方: 
+- 31 - 40 の方: 
+- 41 - 50 の方: 
+
+## jupyter notebook について
+
+実行結果を記録しながら、プログラムを実行できるプログラミング・解析環境です。
+ここでは、python、R、terminal (シェルスクリプト)が使える環境を準備してます。
+
+
+
+## 実習1: deepTools による aggregation plot の作成
+
+### 準備
+
+Terminal を開いてください。
+
+### deepTools について
+
+deepTools: http://deeptools.readthedocs.io/en/latest/
+
+### コマンド
+
+データのダウンロード
+
+```
+wget https://www.encodeproject.org/files/ENCFF002CRA/@@download/ENCFF002CRA.bed.gz
+gunzip ENCFF002CRA.bed.gz
+grep chr21 ENCFF002CRA.bed > ENCFF002CRA.chr21.bed
+```
+
+```
+wget https://raw.githubusercontent.com/yuifu/AJACS_Kyoto_2/master/tutorial_monocle.md
+```
+
+BAMのBigWigファイルへの変換
+
+```
+bamCoverage -b ENCFF831SAH.chr21.bam -o myfile.bw
+```
+
+matrix ファイル（deepTools独自のフォーマット）を作成
+
+```
+computeMatrix reference-point \
+       --referencePoint center \
+       -b 1000 -a 1000 \
+       -R ENCFF002CRA.chr21.bed \
+       -S myfile.bw \
+       --skipZeros \
+       -o matrix_center.gz \
+       --outFileSortedRegions regions00.bed
+```
+
+aggregation plot の作成
+
+```
+plotProfile -m matrix_center.gz \
+              -out ExampleProfile1.png \
+              --plotTitle "Test data profile"
+```
+
+
+## 実習2: Monocle による一細胞RNA-Seqデータの擬時間推定
+### 準備
+
+R を開いてください。
+
+### Monocle について
 
 Monocle: http://bioconductor.org/packages/release/bioc/html/monocle.html
 
+### コマンド
 
 ```
 ###################################################

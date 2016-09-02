@@ -1,7 +1,7 @@
 # AJACS京都２ NGSデータから新たな知識を導出するための高次解析 実習資料
 
 
-## Monocle による一細胞RNA-Seqデータの擬時間推定
+## 実習２: Monocle による一細胞RNA-Seqデータの擬時間推定
 
 Monocle: http://bioconductor.org/packages/release/bioc/html/monocle.html
 
