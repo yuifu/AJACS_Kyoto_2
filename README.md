@@ -33,11 +33,11 @@ __Google Chrome (>= 13) のインストールをお願いします__
 Chrome の方は "ADVANCED" をクリックし、"Proceed to <URL> (unsafe)" をクリックしてアクセスしてください
 
 
-- 01 - 10 の方: 
-- 11 - 20 の方: 
-- 21 - 30 の方: 
-- 31 - 40 の方: 
-- 41 - 50 の方: 
+- 01 - 10 の方: https://52.196.207.243/hub/login
+- 11 - 20 の方: https://52.198.132.139/hub/login
+- 21 - 30 の方: https://52.196.153.89/hub/login
+- 31 - 40 の方: https://52.198.94.14/hub/login
+- 41 - 50 の方: https://52.198.127.36/hub/login
 
 ## jupyter notebook について
 
@@ -82,7 +82,7 @@ matrix ファイル（deepTools独自のフォーマット）を作成
 computeMatrix reference-point \
        --referencePoint center \
        -b 1000 -a 1000 \
-       -R ENCFF002CRA.chr21.bed \
+       -R ENCFF002CRG.chr21.bed \
        -S myfile.bw \
        --skipZeros \
        -o matrix_center.gz \
