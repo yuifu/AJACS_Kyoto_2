@@ -67,7 +67,9 @@ grep chr21 ENCFF002CRA.bed > ENCFF002CRA.chr21.bed
 ```
 
 ```
-wget https://raw.githubusercontent.com/yuifu/AJACS_Kyoto_2/master/tutorial_monocle.md
+wget https://raw.githubusercontent.com/yuifu/AJACS_Kyoto_2/master/ENCFF831SAH.chr21.bam
+wget https://raw.githubusercontent.com/yuifu/AJACS_Kyoto_2/master/ENCFF831SAH.chr21.bam.bai
+wget https://raw.githubusercontent.com/yuifu/AJACS_Kyoto_2/master/ENCFF002CRG.chr21.bed
 ```
 
 BAMのBigWigファイルへの変換
